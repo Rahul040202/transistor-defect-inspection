@@ -1,0 +1,11 @@
+services:
+  transistor-defect-inspection-app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: transistor-defect-inspection-app
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
