@@ -77,6 +77,20 @@ Sample transistor images are available in [`demo/sample-dataset`](demo/sample-da
 
 Example prediction results are available in [`demo/output-images`](demo/output-images). They show the uploaded image alongside the generated anomaly visualizations, including the heatmap, mask, and highlighted defective region.
 
+![Prediction result example](demo/output-images/prediction-result-01.png)
+
+### Notebook Results
+
+The training notebook can be slow to open because it contains embedded output. Key notebook results are also exported as standalone screenshots:
+
+- Dataset samples: [`demo/notebook-screenshots/transistor-dataset-samples.png`](demo/notebook-screenshots/transistor-dataset-samples.png)
+- Model metrics: [`demo/notebook-screenshots/patchcore-model-metrics.png`](demo/notebook-screenshots/patchcore-model-metrics.png)
+- Prediction results: [`demo/notebook-screenshots/patchcore-prediction-results.png`](demo/notebook-screenshots/patchcore-prediction-results.png)
+
+![Transistor dataset samples](demo/notebook-screenshots/transistor-dataset-samples.png)
+![PatchCore model metrics](demo/notebook-screenshots/patchcore-model-metrics.png)
+![PatchCore prediction results](demo/notebook-screenshots/patchcore-prediction-results.png)
+
 ## Project Structure
 
 ```text
@@ -95,10 +109,14 @@ Example prediction results are available in [`demo/output-images`](demo/output-i
 │   └── weights
 │       └── patchcore_model.pt
 ├── demo
+│   ├── notebook-screenshots
+│   │   ├── patchcore-model-metrics.png
+│   │   ├── patchcore-prediction-results.png
+│   │   └── transistor-dataset-samples.png
 │   ├── output-images
-│   │   ├── output-img-1.png
-│   │   ├── output-img-2.png
-│   │   └── output-img-3.png
+│   │   ├── prediction-result-01.png
+│   │   ├── prediction-result-02.png
+│   │   └── prediction-result-03.png
 │   ├── sample-dataset
 │   │   ├── 000.png
 │   │   └── ...
